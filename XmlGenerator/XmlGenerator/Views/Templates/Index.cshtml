@@ -1,4 +1,4 @@
-﻿@model XmlGenerator.Models.Templates
+﻿@model XmlGenerator.Models.TemplateViewModel
 
 @{
     ViewBag.Title = "Index";
@@ -7,16 +7,15 @@
 @using (Html.BeginForm("Create", "Templates"))
 {
     @Html.LabelFor(m => m.TemplateName)
-    @Html.TextBoxFor(m => m.TemplateName, new { @class="form-control"})
+    @Html.TextBoxFor(m => m.TemplateName, new {@class ="form-control"})
 
     @Html.LabelFor(m => m.UserName)
-    @Html.TextBoxFor(m => m.UserName, new { @class="form-control"})
+    @Html.TextBoxFor(m => m.UserName, new {@class = "form-control"})
 
     @Html.LabelFor(m => m.Email)
-    @Html.TextBoxFor(m => m.Email, new { @class="form-control"})
+    @Html.TextBoxFor(m => m.Email, new {@class = "form-control"})
 
     @Html.LabelFor(m => m.City)
-    @Html.TextBoxFor(m => m.City, new { @class="form-control"})
+    @Html.TextBoxFor(m => m.City, new {@class = "form-control"})
 
-    <button type="submit" class="btn btn-primary">Save</button>
 }

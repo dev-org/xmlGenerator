@@ -20,7 +20,7 @@ namespace XmlGenerator.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<Templates> Templates { get; set; }
+        public DbSet<Template> Template { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
